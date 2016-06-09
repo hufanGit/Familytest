@@ -11,11 +11,6 @@
 
 //使用kvc 会自动为当前的属性赋值。
 
-@property(nonatomic,copy)NSString *icon;
-@property(nonatomic,copy)NSString *name;
-@property(nonatomic,copy)NSString *vip;
-@property(nonatomic,copy)NSString *text;
-@property(nonatomic,copy)NSString *picture;
 
 @end
 

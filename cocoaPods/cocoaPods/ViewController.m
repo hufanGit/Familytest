@@ -8,8 +8,13 @@
 
 #import "ViewController.h"
 #import "frameModel.h"
+#import "dataModel.h"
+#import "WeiboCell.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+{
+    UITableView *_tableView;
+}
 
 @property(nonatomic ,strong)NSMutableArray *dataArray;
 @property(nonatomic,strong)NSMutableArray *frameArray;
@@ -28,7 +33,7 @@
         _dataArray = [[NSMutableArray alloc]init];
         
         //将数据填入数组（预留）
-        
+        [self getData];
     }
     return _dataArray;
 }
@@ -47,6 +52,31 @@
 
     }
     return _frameArray;
+}
+
+//创建数据源
+-(void)getData
+{
+    NSString *pathFile = [[NSBundle mainBundle]pathForResource:@"statuses.plist" ofType:nil];
+    //需要传入一个字符串的参数
+    
+    //取出获取到的数组
+    NSArray *FundationArray  = [[NSArray alloc]initWithContentsOfFile:pathFile];
+    
+    for (NSDictionary *dic in FundationArray) {
+        //创建数据模型
+        dataModel *dataM = [[dataModel alloc]initDataModelWithDic:dic];
+        
+        //根据数据模型计算位置
+        frameModel *frameM = [frameModel new];
+        frameM.model = dataM;
+        
+        [_dataArray addObject:dataM];
+        
+        //有一点差异
+        [_frameArray addObject:frameM];
+    }
+    
 }
 
 
@@ -75,8 +105,8 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     //当行数设置出错的时候高度也会停止调用
+    return self.dataArray.count;
     
-    return 5;
 }
 
 
@@ -85,19 +115,21 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //以复用池的形式来创建cell 以胡凡cell为标志，如果没有就会自动创建。
-    UITableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:@"hufanCell"];
+    WeiboCell *cell =[_tableView dequeueReusableCellWithIdentifier:@"hufanCell"];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"hufancell"];
+        cell = [[WeiboCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"hufancell"];
     }
     //当cell 被取出之后就会向里面填入自己想要的数据
+    
+    
     
     return cell;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    return 200;
+    frameModel *model = _frameArray[indexPath.row];
+    return model.cellHeight;
 }
 
 
