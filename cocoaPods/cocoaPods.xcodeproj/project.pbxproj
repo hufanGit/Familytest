@@ -16,6 +16,10 @@
 		4117A5B01D0978E30061B41D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4117A5AE1D0978E30061B41D /* LaunchScreen.storyboard */; };
 		4117A5BB1D0978E30061B41D /* cocoaPodsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4117A5BA1D0978E30061B41D /* cocoaPodsTests.m */; };
 		4117A5C61D0978E30061B41D /* cocoaPodsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4117A5C51D0978E30061B41D /* cocoaPodsUITests.m */; };
+		413048021D09A1700076C2AF /* WeiboCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 413048011D09A1700076C2AF /* WeiboCell.m */; };
+		413048051D09A2680076C2AF /* dataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 413048041D09A2680076C2AF /* dataModel.m */; };
+		413048081D09A27E0076C2AF /* frameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 413048071D09A27E0076C2AF /* frameModel.m */; };
+		4130480A1D09A5500076C2AF /* 微博 in Resources */ = {isa = PBXBuildFile; fileRef = 413048091D09A5500076C2AF /* 微博 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,13 @@
 		4117A5C11D0978E30061B41D /* cocoaPodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cocoaPodsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4117A5C51D0978E30061B41D /* cocoaPodsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cocoaPodsUITests.m; sourceTree = "<group>"; };
 		4117A5C71D0978E30061B41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		413048001D09A1700076C2AF /* WeiboCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboCell.h; sourceTree = "<group>"; };
+		413048011D09A1700076C2AF /* WeiboCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboCell.m; sourceTree = "<group>"; };
+		413048031D09A2680076C2AF /* dataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataModel.h; sourceTree = "<group>"; };
+		413048041D09A2680076C2AF /* dataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataModel.m; sourceTree = "<group>"; };
+		413048061D09A27E0076C2AF /* frameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frameModel.h; sourceTree = "<group>"; };
+		413048071D09A27E0076C2AF /* frameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = frameModel.m; sourceTree = "<group>"; };
+		413048091D09A5500076C2AF /* 微博 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "微博"; sourceTree = "<group>"; };
 		4D1D49CCD0ECAFC1634D051F /* libPods-cocoaPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cocoaPods.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		921CF488BADE00909515B564 /* Pods-cocoaPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoaPods.release.xcconfig"; path = "Pods/Target Support Files/Pods-cocoaPods/Pods-cocoaPods.release.xcconfig"; sourceTree = "<group>"; };
 		EB9D767E111E127A0D955463 /* Pods-cocoaPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoaPods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cocoaPods/Pods-cocoaPods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,11 +127,13 @@
 		4117A59F1D0978E30061B41D /* cocoaPods */ = {
 			isa = PBXGroup;
 			children = (
+				413047FF1D09A1190076C2AF /* WeiboCell */,
 				4117A5A31D0978E30061B41D /* AppDelegate.h */,
 				4117A5A41D0978E30061B41D /* AppDelegate.m */,
 				4117A5A61D0978E30061B41D /* ViewController.h */,
 				4117A5A71D0978E30061B41D /* ViewController.m */,
 				4117A5A91D0978E30061B41D /* Main.storyboard */,
+				413048091D09A5500076C2AF /* 微博 */,
 				4117A5AC1D0978E30061B41D /* Assets.xcassets */,
 				4117A5AE1D0978E30061B41D /* LaunchScreen.storyboard */,
 				4117A5B11D0978E30061B41D /* Info.plist */,
@@ -153,6 +166,19 @@
 				4117A5C71D0978E30061B41D /* Info.plist */,
 			);
 			path = cocoaPodsUITests;
+			sourceTree = "<group>";
+		};
+		413047FF1D09A1190076C2AF /* WeiboCell */ = {
+			isa = PBXGroup;
+			children = (
+				413048001D09A1700076C2AF /* WeiboCell.h */,
+				413048011D09A1700076C2AF /* WeiboCell.m */,
+				413048031D09A2680076C2AF /* dataModel.h */,
+				413048041D09A2680076C2AF /* dataModel.m */,
+				413048061D09A27E0076C2AF /* frameModel.h */,
+				413048071D09A27E0076C2AF /* frameModel.m */,
+			);
+			name = WeiboCell;
 			sourceTree = "<group>";
 		};
 		4A5C078092CBBD99913234B2 /* Pods */ = {
@@ -272,6 +298,7 @@
 			files = (
 				4117A5B01D0978E30061B41D /* LaunchScreen.storyboard in Resources */,
 				4117A5AD1D0978E30061B41D /* Assets.xcassets in Resources */,
+				4130480A1D09A5500076C2AF /* 微博 in Resources */,
 				4117A5AB1D0978E30061B41D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,9 +372,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				413048021D09A1700076C2AF /* WeiboCell.m in Sources */,
+				413048051D09A2680076C2AF /* dataModel.m in Sources */,
 				4117A5A81D0978E30061B41D /* ViewController.m in Sources */,
 				4117A5A51D0978E30061B41D /* AppDelegate.m in Sources */,
 				4117A5A21D0978E30061B41D /* main.m in Sources */,
+				413048081D09A27E0076C2AF /* frameModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
