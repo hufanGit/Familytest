@@ -33,6 +33,7 @@
         _dataArray = [[NSMutableArray alloc]init];
         
         //将数据填入数组（预留）
+        //printf("调用获取数据\n");
         [self getData];
     }
     return _dataArray;
@@ -63,10 +64,12 @@
     //取出获取到的数组
     NSArray *FundationArray  = [[NSArray alloc]initWithContentsOfFile:pathFile];
     
+    //NSLog(@"%@",FundationArray);
     for (NSDictionary *dic in FundationArray) {
         //创建数据模型
         dataModel *dataM = [[dataModel alloc]initDataModelWithDic:dic];
         
+        //NSLog(@"%@",dataM);
         //根据数据模型计算位置
         frameModel *frameM = [frameModel new];
         frameM.model = dataM;
@@ -74,7 +77,8 @@
         [_dataArray addObject:dataM];
         
         //有一点差异
-        [_frameArray addObject:frameM];
+        //如果这里不调用set方法。那么就会报错。
+        [self.frameArray addObject:frameM];
     }
     
 }
@@ -105,6 +109,7 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     //当行数设置出错的时候高度也会停止调用
+    //printf("设置cell的个数 %lu\n",(unsigned long)self.dataArray.count);
     return self.dataArray.count;
     
 }
@@ -115,13 +120,17 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //以复用池的形式来创建cell 以胡凡cell为标志，如果没有就会自动创建。
-    WeiboCell *cell =[_tableView dequeueReusableCellWithIdentifier:@"hufanCell"];
+    WeiboCell *cell =[tableView dequeueReusableCellWithIdentifier:@"hufanCell"];
     if (cell == nil) {
         cell = [[WeiboCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"hufancell"];
     }
     //当cell 被取出之后就会向里面填入自己想要的数据
+    dataModel *data = self.dataArray[indexPath.row];
+    frameModel *frame = self.frameArray[indexPath.row];
     
     
+    cell.dataM = data;
+    cell.frameM = frame;
     
     return cell;
 }
@@ -129,6 +138,8 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     frameModel *model = _frameArray[indexPath.row];
+    
+    //printf("打印cell的高度是%f\n",model.cellHeight);
     return model.cellHeight;
 }
 

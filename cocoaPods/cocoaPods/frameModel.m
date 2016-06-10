@@ -10,17 +10,7 @@
 
 #import "frameModel.h"
 #import "dataModel.h"
-@interface frameModel()
 
-//基本控件的高度
-
-@property(nonatomic,assign)CGRect nameframe;
-@property(nonatomic,assign)CGRect vipframe;
-@property(nonatomic,assign)CGRect textframe;
-@property(nonatomic,assign)CGRect iconframe;
-@property(nonatomic,assign)CGRect pictureframe;
-
-@end
 @implementation frameModel
 
 -(void)setModel:(dataModel *)model

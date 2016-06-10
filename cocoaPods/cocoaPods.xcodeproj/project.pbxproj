@@ -19,7 +19,19 @@
 		413048021D09A1700076C2AF /* WeiboCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 413048011D09A1700076C2AF /* WeiboCell.m */; };
 		413048051D09A2680076C2AF /* dataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 413048041D09A2680076C2AF /* dataModel.m */; };
 		413048081D09A27E0076C2AF /* frameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 413048071D09A27E0076C2AF /* frameModel.m */; };
-		4130480A1D09A5500076C2AF /* 微博 in Resources */ = {isa = PBXBuildFile; fileRef = 413048091D09A5500076C2AF /* 微博 */; };
+		41AC79331D0AA49700B49D73 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 41AC79251D0AA49700B49D73 /* 1.jpeg */; };
+		41AC79341D0AA49700B49D73 /* 1516159990.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 41AC79261D0AA49700B49D73 /* 1516159990.jpeg */; };
+		41AC79351D0AA49700B49D73 /* 238221586.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 41AC79271D0AA49700B49D73 /* 238221586.jpeg */; };
+		41AC79361D0AA49700B49D73 /* 424324.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 41AC79281D0AA49700B49D73 /* 424324.jpeg */; };
+		41AC79371D0AA49700B49D73 /* 50.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 41AC79291D0AA49700B49D73 /* 50.jpeg */; };
+		41AC79381D0AA49700B49D73 /* 7735164184.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 41AC792A1D0AA49700B49D73 /* 7735164184.jpeg */; };
+		41AC79391D0AA49700B49D73 /* 3461756566.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 41AC792C1D0AA49700B49D73 /* 3461756566.jpeg */; };
+		41AC793A1D0AA49700B49D73 /* 4934348604.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 41AC792D1D0AA49700B49D73 /* 4934348604.jpeg */; };
+		41AC793B1D0AA49700B49D73 /* 603564546.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 41AC792E1D0AA49700B49D73 /* 603564546.jpeg */; };
+		41AC793C1D0AA49700B49D73 /* 6289891986.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 41AC792F1D0AA49700B49D73 /* 6289891986.jpeg */; };
+		41AC793D1D0AA49700B49D73 /* 926680527.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 41AC79301D0AA49700B49D73 /* 926680527.jpeg */; };
+		41AC793E1D0AA49700B49D73 /* statuses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41AC79311D0AA49700B49D73 /* statuses.plist */; };
+		41AC793F1D0AA49700B49D73 /* vip.png in Resources */ = {isa = PBXBuildFile; fileRef = 41AC79321D0AA49700B49D73 /* vip.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +74,19 @@
 		413048041D09A2680076C2AF /* dataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataModel.m; sourceTree = "<group>"; };
 		413048061D09A27E0076C2AF /* frameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frameModel.h; sourceTree = "<group>"; };
 		413048071D09A27E0076C2AF /* frameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = frameModel.m; sourceTree = "<group>"; };
-		413048091D09A5500076C2AF /* 微博 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "微博"; sourceTree = "<group>"; };
+		41AC79251D0AA49700B49D73 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		41AC79261D0AA49700B49D73 /* 1516159990.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1516159990.jpeg; sourceTree = "<group>"; };
+		41AC79271D0AA49700B49D73 /* 238221586.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 238221586.jpeg; sourceTree = "<group>"; };
+		41AC79281D0AA49700B49D73 /* 424324.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 424324.jpeg; sourceTree = "<group>"; };
+		41AC79291D0AA49700B49D73 /* 50.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 50.jpeg; sourceTree = "<group>"; };
+		41AC792A1D0AA49700B49D73 /* 7735164184.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7735164184.jpeg; sourceTree = "<group>"; };
+		41AC792C1D0AA49700B49D73 /* 3461756566.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3461756566.jpeg; sourceTree = "<group>"; };
+		41AC792D1D0AA49700B49D73 /* 4934348604.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4934348604.jpeg; sourceTree = "<group>"; };
+		41AC792E1D0AA49700B49D73 /* 603564546.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 603564546.jpeg; sourceTree = "<group>"; };
+		41AC792F1D0AA49700B49D73 /* 6289891986.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6289891986.jpeg; sourceTree = "<group>"; };
+		41AC79301D0AA49700B49D73 /* 926680527.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 926680527.jpeg; sourceTree = "<group>"; };
+		41AC79311D0AA49700B49D73 /* statuses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statuses.plist; sourceTree = "<group>"; };
+		41AC79321D0AA49700B49D73 /* vip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vip.png; sourceTree = "<group>"; };
 		4D1D49CCD0ECAFC1634D051F /* libPods-cocoaPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cocoaPods.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		921CF488BADE00909515B564 /* Pods-cocoaPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoaPods.release.xcconfig"; path = "Pods/Target Support Files/Pods-cocoaPods/Pods-cocoaPods.release.xcconfig"; sourceTree = "<group>"; };
 		EB9D767E111E127A0D955463 /* Pods-cocoaPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoaPods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cocoaPods/Pods-cocoaPods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,13 +151,13 @@
 		4117A59F1D0978E30061B41D /* cocoaPods */ = {
 			isa = PBXGroup;
 			children = (
+				41AC79231D0AA49700B49D73 /* 微博 */,
 				413047FF1D09A1190076C2AF /* WeiboCell */,
 				4117A5A31D0978E30061B41D /* AppDelegate.h */,
 				4117A5A41D0978E30061B41D /* AppDelegate.m */,
 				4117A5A61D0978E30061B41D /* ViewController.h */,
 				4117A5A71D0978E30061B41D /* ViewController.m */,
 				4117A5A91D0978E30061B41D /* Main.storyboard */,
-				413048091D09A5500076C2AF /* 微博 */,
 				4117A5AC1D0978E30061B41D /* Assets.xcassets */,
 				4117A5AE1D0978E30061B41D /* LaunchScreen.storyboard */,
 				4117A5B11D0978E30061B41D /* Info.plist */,
@@ -179,6 +203,42 @@
 				413048071D09A27E0076C2AF /* frameModel.m */,
 			);
 			name = WeiboCell;
+			sourceTree = "<group>";
+		};
+		41AC79231D0AA49700B49D73 /* 微博 */ = {
+			isa = PBXGroup;
+			children = (
+				41AC79241D0AA49700B49D73 /* icon */,
+				41AC792B1D0AA49700B49D73 /* image */,
+				41AC79311D0AA49700B49D73 /* statuses.plist */,
+				41AC79321D0AA49700B49D73 /* vip.png */,
+			);
+			path = "微博";
+			sourceTree = "<group>";
+		};
+		41AC79241D0AA49700B49D73 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				41AC79251D0AA49700B49D73 /* 1.jpeg */,
+				41AC79261D0AA49700B49D73 /* 1516159990.jpeg */,
+				41AC79271D0AA49700B49D73 /* 238221586.jpeg */,
+				41AC79281D0AA49700B49D73 /* 424324.jpeg */,
+				41AC79291D0AA49700B49D73 /* 50.jpeg */,
+				41AC792A1D0AA49700B49D73 /* 7735164184.jpeg */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		41AC792B1D0AA49700B49D73 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				41AC792C1D0AA49700B49D73 /* 3461756566.jpeg */,
+				41AC792D1D0AA49700B49D73 /* 4934348604.jpeg */,
+				41AC792E1D0AA49700B49D73 /* 603564546.jpeg */,
+				41AC792F1D0AA49700B49D73 /* 6289891986.jpeg */,
+				41AC79301D0AA49700B49D73 /* 926680527.jpeg */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 		4A5C078092CBBD99913234B2 /* Pods */ = {
@@ -296,10 +356,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AC79371D0AA49700B49D73 /* 50.jpeg in Resources */,
+				41AC79361D0AA49700B49D73 /* 424324.jpeg in Resources */,
+				41AC793E1D0AA49700B49D73 /* statuses.plist in Resources */,
+				41AC793A1D0AA49700B49D73 /* 4934348604.jpeg in Resources */,
+				41AC793C1D0AA49700B49D73 /* 6289891986.jpeg in Resources */,
 				4117A5B01D0978E30061B41D /* LaunchScreen.storyboard in Resources */,
+				41AC793D1D0AA49700B49D73 /* 926680527.jpeg in Resources */,
+				41AC79351D0AA49700B49D73 /* 238221586.jpeg in Resources */,
 				4117A5AD1D0978E30061B41D /* Assets.xcassets in Resources */,
-				4130480A1D09A5500076C2AF /* 微博 in Resources */,
+				41AC793F1D0AA49700B49D73 /* vip.png in Resources */,
+				41AC79381D0AA49700B49D73 /* 7735164184.jpeg in Resources */,
+				41AC79391D0AA49700B49D73 /* 3461756566.jpeg in Resources */,
 				4117A5AB1D0978E30061B41D /* Main.storyboard in Resources */,
+				41AC793B1D0AA49700B49D73 /* 603564546.jpeg in Resources */,
+				41AC79341D0AA49700B49D73 /* 1516159990.jpeg in Resources */,
+				41AC79331D0AA49700B49D73 /* 1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

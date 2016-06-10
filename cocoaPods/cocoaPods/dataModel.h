@@ -14,7 +14,7 @@
 
 @property(nonatomic,copy)NSString *icon;
 @property(nonatomic,copy)NSString *name;
-@property(nonatomic,copy)NSString *vip;
+@property(nonatomic,copy)NSNumber *vip;
 @property(nonatomic,copy)NSString *text;
 @property(nonatomic,copy)NSString *picture;
 
